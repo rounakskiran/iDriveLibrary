@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum ServiceResponse {
+public enum ServiceResponse {
     case fetchedData(StorageObject)
     case error(Error)
     case noData
 }
 
-class StorageObject {
+public class StorageObject {
     let value: Data
     init(_ value: Data) {
         self.value = value

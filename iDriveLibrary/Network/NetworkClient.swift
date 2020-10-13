@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal class NetworkClient {
+class NetworkClient: NetworkManagerProtocol {
     func loadData(url: String, completion: @escaping (ServiceResponse) -> Void) {
         guard let url = URL(string: url) else {
             completion(.noData)

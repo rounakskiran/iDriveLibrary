@@ -23,7 +23,7 @@ public class Repository {
     }
     
     private func fetchFromNetwork(url: String, completion: @escaping (ServiceResponse) -> Void) {
-        NetworkClient().loadData(url: url) { (serviceResponse) in
+        NetworkManager.sharedInstance().loadData(url: url) { (serviceResponse) in
             completion(serviceResponse)
         }
     }
