@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author             = { "rounakskiran" => "rounakskiran@gmail.com" }
   spec.platform     = :ios, "12.0"
-  spec.source       = { :path => '.' }
+  spec.source       = { :git => "https://github.com/rounakskiran/iDriveLibrary.git", :tag => "1.0.0" }
   spec.source_files  = "iDriveLibrary"
   spec.swift_version = "5"
 
